@@ -6,6 +6,8 @@ class Person
   def initialize(persons_attributes)
       
       persons_attributes.each do | att, v| 
+        self.send(("#{key}="), value)}
+  end
         
         
         
