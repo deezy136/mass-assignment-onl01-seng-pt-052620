@@ -7,7 +7,7 @@ class Person
   
   def initialize(persons_attributes)
       
-      persons_attributes.each do | att, v| 
+      persons_attributes.each do | key, value| 
         self.send(("#{key}="), value)
   end
         
