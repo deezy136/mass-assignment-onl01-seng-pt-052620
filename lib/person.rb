@@ -6,8 +6,7 @@ class Person
 :wrist_size, :glove_size, :pant_length, :pant_width
   
   def initialize(persons_attributes)
-      
-      persons_attributes.each do | key, value| 
+            persons_attributes.each do | key, value| 
         self.send(("#{key}="), value)
       end 
   end
